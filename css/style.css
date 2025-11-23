@@ -1,0 +1,122 @@
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #ffe5f2; /* light pink background */
+    color: #4a0032;      /* dark purple/pink text */
+}
+
+/* Header */
+header {
+    background: #ff4fa3;  /* bright pink */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* Section titles */
+section h2 {
+    color: #c8006f;  /* dark pink */
+    margin-bottom: 10px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    display: block;
+    margin: 10px auto 20px;
+    border: 4px solid #ff4fa3;
+}
+
+/* Project section */
+.project img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 3px solid #ff99c8;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ff66b3;
+    border-radius: 5px;
+    background: #ffe5f2;
+}
+
+form button {
+    padding: 10px;
+    background: #ff4fa3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #e60078;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff4fa3;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
